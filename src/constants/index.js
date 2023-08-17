@@ -2,13 +2,22 @@ import {
   frontend,
   backend,
   ux,
+  ai,
   prototyping,
   javascript,
   typescript,
   html,
   css,
+  robotics,
   reactjs,
   redux,
+  vuejs,
+  vr,
+  automation,
+  devops,
+  cloud,
+  dscience,
+  dbscience,
   tailwind,
   nodejs,
   git,
@@ -17,7 +26,6 @@ import {
   postgresql,
   rubyrails,
   graphql,
-  komikult,
   leaderboard,
   math,
   movie,
@@ -25,8 +33,26 @@ import {
   space,
   coverhunt,
   dcc,
+  python,
+  php,
+  solidW,
+  cpp,
+  cs,
+  unity,
+  sass, flutter,
+  laravel,
   kelhel,
   microverse,
+  dart,
+  atg,
+  vclair,
+  workana,
+  helpingHand,
+  factoryTv,
+  projectTrading,
+  deliveryGoo,
+  rubi5,
+  colombianFixers,
 } from '../assets';
 
 export const navLinks = [
@@ -54,13 +80,53 @@ const services = [
     icon: backend,
   },
   {
-    title: 'UI/UX Design',
-    icon: ux,
-  },
-  {
     title: 'Software Prototyping',
     icon: prototyping,
   },
+    {
+    title: 'IOS/Android Development',
+    icon: ux,
+  },
+  {
+    title: 'AI developer',
+    icon: ai,
+  },
+    {
+    title: 'Robotics',
+      icon: robotics
+      ,
+  },
+    {
+      title: 'VR development',
+      icon: vr
+  },
+      {
+      title: 'DevOps',
+      icon: devops
+  },
+      {
+      title: 'Cloud Engineer',
+      icon: cloud
+  },
+  
+    {
+    title: 'Automation engineering',
+    icon: automation,
+    }
+  ,
+  
+    {
+    title: 'Database engineering',
+    icon: dbscience,
+  },
+    
+  
+    {
+    title: 'Data Science',
+    icon: dscience,
+    }
+  ,
+
 ];
 
 const technologies = [
@@ -70,7 +136,7 @@ const technologies = [
   },
   {
     name: 'CSS 3',
-    icon: css,
+    icon: css ,
   },
   {
     name: 'JavaScript',
@@ -80,84 +146,121 @@ const technologies = [
     name: 'TypeScript',
     icon: typescript,
   },
+    {
+    name: 'PHP',
+    icon: php,
+  },
+      {
+    name: 'Python',
+    icon: python,
+  },
   {
     name: 'React JS',
     icon: reactjs,
   },
   {
-    name: 'Redux Toolkit',
-    icon: redux,
-  },
-  {
     name: 'Tailwind CSS',
     icon: tailwind,
+  },
+        {
+    name: 'SASS',
+    icon: sass,
   },
   {
     name: 'Node JS',
     icon: nodejs,
   },
   {
-    name: 'Rails',
-    icon: rubyrails,
+    name: 'Laravel',
+    icon: laravel,
   },
-  {
-    name: 'graphql',
-    icon: graphql,
+        {
+    name: 'flutter',
+    icon: flutter,
   },
-  {
-    name: 'postgresql',
-    icon: postgresql,
+          {
+    name: 'Vue.js',
+    icon: vuejs,
   },
   {
     name: 'git',
     icon: git,
   },
   {
-    name: 'figma',
-    icon: figma,
+    name: 'Unity',
+    icon: unity,
   },
   {
-    name: 'docker',
-    icon: docker,
+    name: 'SolidWorks',
+    icon: solidW,
   },
+        
 ];
 
 const experiences = [
   {
-    title: 'Front-End Developer',
-    company_name: 'Cover Hunt',
-    icon: coverhunt,
+    title: 'TECHNICAL SUPPORT SPECIALIST',
+    company_name: 'Advance Technology Group',
+    icon: atg,
     iconBg: '#333333',
-    date: 'Aug 2021 - Feb 2022',
+    date: 'May 2021 - Dec 2022',
   },
   {
-    title: 'Mentor (Volunteer)',
-    company_name: 'Microverse',
-    icon: microverse,
+    title: 'Web developer & UX/UI designer',
+    company_name: 'VertClair as freelance',
+    icon: vclair,
     iconBg: '#333333',
-    date: 'Mar 2022 - May 2022',
+    date: 'Apr 2022 - May 2022',
   },
   {
-    title: 'Junior Software Engineer',
-    company_name: 'Kelhel',
-    icon: kelhel,
+    title: 'Wordpress developer',
+    company_name: 'DetallePromocional.com as freelance',
+    icon: workana,
     iconBg: '#333333',
-    date: 'May 2022 - Oct 2022',
+    date: 'Feb 2023 - Mar 2023',
   },
   {
-    title: 'Full Stack Developer',
-    company_name: 'Diversity Cyber Council',
-    icon: dcc,
+    title: 'Wordpress developer',
+    company_name: 'Rubi5.com as freelance',
+    icon: workana,
     iconBg: '#333333',
-    date: 'Sep 2022 - Present',
+    date: 'Mar 2023',
+  },
+    {
+    title: 'Flutter & Laravel developer',
+    company_name: 'deliveryenpueblos.es as freelance',
+    icon: workana,
+    iconBg: '#333333',
+    date: 'Feb 2023 - Apr 2023',
+  },
+  {
+    title: 'Flutter & Node.js developer',
+    company_name: 'Project Trading as freelance',
+    icon: workana,
+    iconBg: '#333333',
+    date: 'May 2023 - Jun 2023',
+  },
+      {
+    title: 'Flutter developer',
+    company_name: 'Factory TV as freelance',
+    icon: workana,
+    iconBg: '#333333',
+    date: 'Jun 2023 - Aug 2023',
+  },
+  {
+    title: 'Laravel developer',
+    company_name: 'mipymes as freelance',
+    icon: workana,
+    iconBg: '#333333',
+    date: 'Aug 2023 - present',
   },
 ];
 
 const projects = [
   {
     id: 'project-1',
-    name: 'KomiKult',
-    description: 'A comic characters list app that displays Marvel characters.',
+    name: 'Helping Hand mipymes',
+    description: 'A CMS meant to help guide starting enterpreneurs with the consolidation of their company',
     tags: [
       {
         name: 'react',
@@ -172,15 +275,85 @@ const projects = [
         color: 'pink-text-gradient',
       },
     ],
-    image: komikult,
-    repo: 'https://github.com/shaqdeff/KomiKult',
+    image: helpingHand,
+    repo: '',
+    demo: 'https://shaqdeff.github.io/KomiKult/',
+  },
+
+
+  {
+    id: 'project-2',
+    name: 'Factory TV',
+    description: 'An application meant to enjoy the best movies and series out there! not enough? watch the collection of IPTV channels or sports results live!',
+    tags: [
+      {
+        name: 'react',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'mongodb',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'tailwind',
+        color: 'pink-text-gradient',
+      },
+    ],
+    image: factoryTv,
+    repo: '',
+    demo: 'https://shaqdeff.github.io/KomiKult/',
+  },
+
+  {
+    id: 'project-3',
+    name: 'Project Trading',
+    description: 'An order tracing app meant to organize and track the development of delivering across different boundries.',
+    tags: [
+      {
+        name: 'react',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'mongodb',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'tailwind',
+        color: 'pink-text-gradient',
+      },
+    ],
+    image: projectTrading,
+    repo: '',
+    demo: 'https://shaqdeff.github.io/KomiKult/',
+  },
+
+  {
+    id: 'project-4',
+    name: 'DeliveryGoo',
+    description: 'A delivery application meant to allow its users a high degree of utility and customization.',
+    tags: [
+      {
+        name: 'react',
+        color: 'blue-text-gradient',
+      },
+      {
+        name: 'mongodb',
+        color: 'green-text-gradient',
+      },
+      {
+        name: 'tailwind',
+        color: 'pink-text-gradient',
+      },
+    ],
+    image: deliveryGoo,
+    repo: '',
     demo: 'https://shaqdeff.github.io/KomiKult/',
   },
   {
-    id: 'project-2',
-    name: 'Leaderboard',
+    id: 'project-5',
+    name: 'rubi5',
     description:
-      'A leaderboard list app that displays scores submitted by different players.',
+      'Wordpress development of a plugin for organizing and showing the applications cart & product settings',
     tags: [
       {
         name: 'react',
@@ -195,14 +368,14 @@ const projects = [
         color: 'pink-text-gradient',
       },
     ],
-    image: leaderboard,
-    repo: 'https://github.com/shaqdeff/Leaderboard',
+    image: rubi5,
+    repo: '',
     demo: 'https://shaqdeff.github.io/Leaderboard/',
   },
   {
-    id: 'project-3',
-    name: 'Math Magicians',
-    description: 'This is a single-page calculator app built with React',
+    id: 'project-6',
+    name: 'Colombian Fixers',
+    description: 'The optimization of a website working with an old version of jquery',
     tags: [
       {
         name: 'nextjs',
@@ -217,55 +390,11 @@ const projects = [
         color: 'pink-text-gradient',
       },
     ],
-    image: math,
-    repo: 'https://github.com/shaqdeff/Math-Magicians',
+    image: colombianFixers,
+    repo: '',
     demo: 'https://inspiring-medovik-37d3b3.netlify.app/',
   },
-  {
-    id: 'project-4',
-    name: 'Movie Metro',
-    description: `A single-page application that allows users to search for any movie or show's ratings and its details.`,
-    tags: [
-      {
-        name: 'nextjs',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'supabase',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'css',
-        color: 'pink-text-gradient',
-      },
-    ],
-    image: movie,
-    repo: 'https://github.com/shaqdeff/Movie-Metro',
-    demo: 'https://movie-metro.netlify.app/',
-  },
-  {
-    id: 'project-5',
-    name: 'Nyeusi Fest Site',
-    description:
-      'This is a demo concert website for a music festival called Nyeusi.',
-    tags: [
-      {
-        name: 'nextjs',
-        color: 'blue-text-gradient',
-      },
-      {
-        name: 'supabase',
-        color: 'green-text-gradient',
-      },
-      {
-        name: 'css',
-        color: 'pink-text-gradient',
-      },
-    ],
-    image: nyeusi,
-    repo: 'https://github.com/shaqdeff/Nyeusi-Fest-Site',
-    demo: 'https://shaqdeff.github.io/Nyeusi-Fest-Site/',
-  },
+  
 ];
 
 export { services, technologies, experiences, projects };

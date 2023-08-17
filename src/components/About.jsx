@@ -8,7 +8,7 @@ import { SectionWrapper } from '../hoc';
 const ServiceCard = ({ index, title, icon }) => {
   return (
     <motion.div
-      variants={fadeIn('right', 'spring', 0.5 * index, 0.75)}
+      variants={fadeIn('right', 'spring', 0.3 * index, 0.75)}
       className="xs:w-[250px] w-full card-gradient p-[1px] rounded-[20px] shadow-card">
       <div
         options={{
@@ -37,12 +37,16 @@ const About = () => {
       <motion.p
         variants={fadeIn('', '', 0.1, 1)}
         className="mt-4 text-taupe text-[18px] max-w-3xl leading-[30px]">
-        Lorem ipsum dolor sit, amet consectetur adipisicing elit. Debitis
-        sapiente ipsum dolorum dicta eaque cumque inventore molestias, beatae ea
-        quaerat alias accusamus voluptas autem! Alias odit voluptates in totam
-        vitae dignissimos minus eaque culpa unde tempore dolore aperiam
-        obcaecati voluptatum aliquam corrupti, suscipit accusamus! Odit unde
-        veniam dolorum ipsum doloribus.
+        I bring a unique blend of skills in hardware
+        and software development, as well as a passion for Artifficial Inteligence implementation.
+        With a focus on collaboration and teamwork, I have successfully
+        delivered innovative solutions in computer vision, robotics, and
+        network protocols. Additionally, my experience in Flutter, Laravel,
+        and React for multiplatform applications demonstrates my ability
+        to create user-friendly and efficient software while working in a
+        team environment. I possess strong leadership, problem solving
+        and adaptability skills, enabling me to effectively communicate
+        and work with people from diverse backgrounds.
       </motion.p>
 
       <div className="mt-20 flex flex-wrap gap-10">
@@ -50,6 +54,7 @@ const About = () => {
           <ServiceCard key={service.title} index={index} {...service} />
         ))}
       </div>
+
     </div>
   );
 };

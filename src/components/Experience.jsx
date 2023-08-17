@@ -9,6 +9,7 @@ import { experiences } from '../constants';
 import { SectionWrapper } from '../hoc';
 import { download, downloadHover, resume } from '../assets';
 import { textVariant } from '../utils/motion';
+import { engHv } from '../assets';
 
 const ExperienceCard = ({ experience }) => (
   <VerticalTimelineElement
@@ -52,6 +53,9 @@ const ExperienceCard = ({ experience }) => (
 );
 
 const Experience = () => {
+
+
+
   return (
     <>
       <motion.div variants={textVariant()}>
@@ -65,9 +69,6 @@ const Experience = () => {
 
       <div className="mt-20 flex flex-col">
         <VerticalTimeline className="vertical-timeline-custom-line">
-          {experiences.map((experience, index) => (
-            <ExperienceCard key={index} experience={experience} />
-          ))}
           <VerticalTimelineElement
             contentStyle={{
               background: '#eaeaec',
@@ -91,7 +92,14 @@ const Experience = () => {
                 />
               </div>
             }>
-            <button
+            <a
+              href={engHv}
+              download='Juan Arango CV ENG.pdf'
+              target='_blank'
+              rel="noreferrer"
+
+
+            ><button
               className="live-demo flex justify-between 
               sm:text-[18px] text-[14px] text-timberWolf 
               font-bold font-beckman items-center py-5 pl-3 pr-3 
@@ -100,12 +108,7 @@ const Experience = () => {
               sm:mt-[22px] mt-[16px] hover:bg-battleGray 
               hover:text-eerieBlack transition duration-[0.2s] 
               ease-in-out"
-              onClick={() =>
-                window.open(
-                  'resume link', //paste the link to your resume here
-                  '_blank'
-                )
-              }
+
               onMouseOver={() => {
                 document
                   .querySelector('.download-btn')
@@ -116,15 +119,19 @@ const Experience = () => {
                   .querySelector('.download-btn')
                   .setAttribute('src', download);
               }}>
-              MY RESUME
-              <img
-                src={download}
-                alt="download"
-                className="download-btn sm:w-[26px] sm:h-[26px] 
+                MY RESUME
+                <img
+                  src={download}
+                  alt="download"
+                  className="download-btn sm:w-[26px] sm:h-[26px] 
                 w-[23px] h-[23px] object-contain"
-              />
-            </button>
+                />
+              </button></a>
           </VerticalTimelineElement>
+          {experiences.slice().reverse().map((experience, index) => (
+            <ExperienceCard key={index} experience={experience} />
+          ))}
+
         </VerticalTimeline>
       </div>
     </>

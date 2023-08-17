@@ -27,27 +27,27 @@ const Hero = () => {
         <div
           className={`absolute inset-0 sm:top-[250px] top-[150px] 
           lg:top-[150px] xl:top-[250px] ${styles.paddingX} 
-          max-w-7xl mx-auto flex flex-row items-start
+          max-w-9xl mx-auto flex flex-row items-start
           justify-between gap-3`}>
           <div className="flex flex-col justify-center items-center mt-5 ml-3">
             <div className="w-5 h-5 rounded-full bg-[#0a0a0a] sm:hidden" />
             <div className="w-1 sm:h-80 h-40 bw-gradient sm:hidden" />
           </div>
 
-          <div>
+          <div className=' w-full sm:w-2/3  '>
             <h1
-              className={`${styles.heroHeadText} text-eerieBlack font-poppins uppercase`}>
-              Hi, I'm{' '}
+              className={`${styles.heroHeadText} text-eerieBlack font-poppins uppercase `}>
+              Hi, I'm{' '}<br />
               <span
                 className="sm:text-battleGray sm:text-[90px] 
                 text-eerieBlack text-[50px] font-mova
                 font-extrabold uppercase">
-                Shaquille
+                Juan Arango
               </span>
             </h1>
             <p className={`${styles.heroSubText} mt-2 text-eerieBlack`}>
-              Lorem ipsum dolor sit amet. <br className="sm:block hidden" />
-              consectetur adipisicing elit deleniti, voluptas.
+              Mechatronic Engineer & <br className="sm:block hidden" />
+              Full-stack developer
             </p>
           </div>
           <div
@@ -87,7 +87,7 @@ const Hero = () => {
             lg:ml-[75vw] md:ml-[60vw] xmd:ml-[60vw] 2xl:ml-[83vw]
             sm:h-[90vh] md:h-[70vh] xl:h-[80vh]"
             src={shaq}
-            alt="shaquille"
+            alt="juan"
           />
         </div>
       </section>
