@@ -73,7 +73,7 @@ import engHv from './resumes/Juan Arango CV ENG.pdf';
 
 import helpingHand from './projects/helpingHand.png';
 import deliveryGoo from  './projects/deliveryGoo.png';
-import factoryTv from './projects/factoryTv.png';
+import factoryTv from './projects/factorytv.png';
 import projectTrading from './projects/projectTrading.png';
 import rubi5 from './projects/rubi5.png';
 import colombianFixers from './projects/ColombianFixers.png';
