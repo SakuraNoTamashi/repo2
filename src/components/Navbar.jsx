@@ -10,9 +10,9 @@ const Navbar = () => {
 
   return (
     <nav
-      className={`${styles.paddingX} w-full flex items-center py-2 fixed
+      className={`sm:px-9 px-6 w-full flex items-center py-2 fixed
       top-0 z-20 bg-flashWhite sm:opacity-[0.97] xxs:h-[12vh]`}>
-      <div className="w-full flex justify-between items-center max-w-7xl mx-auto">
+      <div className="w-full flex justify-between items-center mx-auto">
         <Link
           to="/"
           className="flex items-center gap-2"
@@ -29,7 +29,7 @@ const Navbar = () => {
           />
 
           <h1
-            className='text-eerieBlack font-bold text-xl text-black'
+            className='font-bold text-xl text-black'
           > Juan Arango</h1>
 
 
@@ -42,7 +42,7 @@ const Navbar = () => {
                 } hover:text-taupe text-[21px] font-medium font-mova
                 uppercase tracking-[3px] cursor-pointer nav-links`}
               onClick={() => setActive(nav.title)}>
-              <a href={`#${nav.id}`}>{nav.title}</a>
+              <a href={`${nav.id}`}>{nav.title}</a>
             </li>
           ))}
         </ul>

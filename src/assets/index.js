@@ -7,6 +7,7 @@ import logo from './logo/logo-black.png';
 import logotext from './logo/logo-text-black.png';
 
 import shaq from './personal/shaq.png';
+import coverPic from './personal/coverPic.png';
 
 import backend from './icons/backend.png';
 import ux from './icons/android-logo.png';
@@ -57,6 +58,17 @@ import flutter from './tech/flutter.png';
 import php from './tech/php.png';
 import dart from './tech/Dart-logo.png';
 import vuejs from './tech/vuejs.png'
+import firebase from './tech/firebase.png';
+import dotNet from './tech/dotNet.png';
+import mysql from './tech/mysql.png';
+import mariaDB from './tech/mariaDB.png';
+import strapi from './tech/strapi.png';
+import wpress from './tech/Wordpress_Blue_logo.png';
+import lightsail from './tech/lightsail.png';
+import aws from './tech/aws.png';
+import ec2 from './tech/ec2.png';
+import cpanel from './tech/cpanel.png';
+import plesk from './tech/pelsk.png';
 
 import coverhunt from './company/coverhunt.png';
 import dcc from './company/dcc.png';
@@ -84,7 +96,50 @@ import movie from './projects/movie-metro.png';
 import nyeusi from './projects/nyeusi.png';
 import space from './projects/space-hub.png';
 
+
+
+import empathy from './softSkills/emociones.png';
+import creativity from './softSkills/creatividad.png';
+import conflictResolution from './softSkills/la-resolucion-de-conflictos.png';
+import leadership from './softSkills/lider.png';
+import continuousLearning from './softSkills/libro.png';
+import adaptability from './softSkills/adaptacion.png';
+import criticalThinking from './softSkills/design-thinking.png';
+import communication from './softSkills/online-communication.png';
+import teamWork from './softSkills/trabajo-en-equipo.png';
+import problemSolving from './softSkills/solucion.png'
+import negotiation from './softSkills/apreton-de-manos.png';
+import presentation from './softSkills/presentacion.png';
+
+
+
+
+
 export {
+  wpress,
+  strapi,
+  firebase,
+  mysql,
+  mariaDB,
+  ec2,
+  lightsail,
+  plesk,
+  aws,
+  cpanel,
+
+  dotNet,
+  empathy,
+  problemSolving,
+  creativity,
+  negotiation,
+  presentation,
+  conflictResolution,
+  leadership,
+  continuousLearning,
+  adaptability,
+  criticalThinking,
+  communication,
+  teamWork,
   bwmap,
   nairobi,
   whiteabstract,
@@ -99,6 +154,7 @@ export {
   vuejs,
   ux,
   ai,
+  coverPic,
   dbscience,
   vclair,
   dscience,

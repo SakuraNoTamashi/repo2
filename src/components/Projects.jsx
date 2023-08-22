@@ -7,6 +7,7 @@ import { projects } from '../constants';
 import { fadeIn, textVariant, staggerContainer } from '../utils/motion';
 import { SiGithub } from "react-icons/si";
 import { BsLink45Deg } from "react-icons/bs";
+import { useNavigate } from 'react-router-dom';
 
 const ProjectCard2 = ({
   id,
@@ -132,14 +133,24 @@ const ProjectCard = ({
   index,
   active,
   handleClick,
+  tags,
 }) => {
+
+  const history = useNavigate();
+
+  const showProject = (id) => {
+
+    history(`/project?id=${id}`);
+  };
   return (
     <motion.div
       variants={fadeIn('right', 'spring', index * 0.2, 0.75)}
       className={`relative ${active === id ? 'lg:flex-[3.5] flex-[10]' : 'lg:flex-[0.5] flex-[2]'
         } flex items-center justify-center min-w-[170px] 
       h-[420px] cursor-pointer card-shadow`}
-      onClick={() => handleClick(id)}>
+      onHoverStart={() => handleClick(id)}
+      onClick={() => showProject(id)}
+    >
       <div
         className="absolute top-0 left-0 z-10 bg-jetLight 
       h-full w-full opacity-[0.5] rounded-[24px]"></div>
@@ -151,33 +162,42 @@ const ProjectCard = ({
       />
 
       {active !== id ? (
-        <div className="flex items-center justify-start pr-[4.5rem]">
-          <h3
-            className="font-extrabold font-beckman uppercase w-[200px] h-[30px] 
-        whitespace-nowrap sm:text-[27px] text-[18px] text-timberWolf tracking-[1px]
-        absolute right-0 z-0 lg:bottom-[7rem] lg:rotate-[-90deg] lg:origin-[0,0]
-        leading-none z-20">
-            {name}
-          </h3>
-        </div>
+        <>
+          <div
+            className="absolute bottom-0 p-8 justify-start w-full 
+            flex-col bg-[rgba(122,122,122,0.5)] rounded-b-[24px] z-10 h-2/6 overflow-hidden">
+            <h2
+              className="font-bold sm:text-[32px] text-[24px] 
+              text-timberWolf uppercase font-beckman sm:mt-0 -mt-[1rem]">
+              {name}
+            </h2>
+
+            <div className='absolute grid grid-cols-10 gap-3 mt-2 bottom-2 max-w-full overflow-hidden'>
+              {tags.map((tag) => (
+                <div
+                  // onClick={() => window.open(repo, '_blank')}
+                  className="bg-[rgba(20,20,20,0.2)] sm:w-11 sm:h-11 w-15 h-15 rounded-md 
+                  flex justify-center items-center cursor-pointer
+                  sm:opacity-[0.9] opacity-[0.8] overflow-hidden">
+                  <img
+                    src={tag.tag}
+
+                    className="w-4/5 h-4/5 object-contain"
+                  />
+                </div>
+              ))}
+
+
+
+            </div>
+          </div>
+        </>
       ) : (
         <>
           <div
             className="absolute bottom-0 p-8 justify-start w-full 
-            flex-col bg-[rgba(122,122,122,0.5)] rounded-b-[24px] z-20">
-            <div className="absolute inset-0 flex justify-end m-3">
-              <div
-                onClick={() => window.open(repo, '_blank')}
-                className="bg-night sm:w-11 sm:h-11 w-10 h-10 rounded-full 
-                  flex justify-center items-center cursor-pointer
-                  sm:opacity-[0.9] opacity-[0.8]">
-                <img
-                  src={github}
-                  alt="source code"
-                  className="w-4/5 h-4/5 object-contain"
-                />
-              </div>
-            </div>
+            flex-col bg-[rgba(122,122,122,0.5)] rounded-b-[24px] z-10 h-3/5 overflow-hidden">
+
 
             <h2
               className="font-bold sm:text-[32px] text-[24px] 
@@ -187,9 +207,27 @@ const ProjectCard = ({
             <p
               className="text-silver sm:text-[14px] text-[12px] 
               max-w-3xl sm:leading-[24px] leading-[18px]
-              font-poppins tracking-[1px]">
+              font-poppins tracking-[1px] overflow-hidden">
               {description}
             </p>
+            <div className='absolute grid grid-cols-10 gap-3 mt-2 bottom-2 max-w-full h-1/5 overflow-hidden'>
+              {tags.map((tag) => (
+                <div
+                  // onClick={() => window.open(repo, '_blank')}
+                  className=" bg-night sm:w-11 sm:h-11 w-15 h-15 rounded-md 
+                  flex justify-center items-center cursor-pointer
+                  sm:opacity-[0.9] opacity-[0.8] overflow-hidden">
+                  <img
+                    src={tag.tag}
+
+                    className="w-4/5 h-4/5 object-contain"
+                  />
+                </div>
+              ))}
+
+
+
+            </div>
             {/* <button
               className="live-demo flex justify-between 
               sm:text-[16px] text-[14px] text-timberWolf 
@@ -231,7 +269,7 @@ const Projects = () => {
 
   return (
     <div className="mt-[6rem] ">
-      <div className={`${styles.padding} max-w-7xl mx-auto relative z-0 `}>
+      <div className={`${styles.padding}  mx-auto relative z-0 `}>
         <motion.div variants={textVariant()}>
           <p className={`${styles.sectionSubText}`}>Case Studies</p>
           <h2 className={`${styles.sectionHeadTextLight}`}>Projects.</h2>
@@ -259,7 +297,7 @@ const Projects = () => {
         whileInView="show"
         viewport={{ once: false, amount: 0.25 }}
         className={`${styles.innerWidth} mx-auto flex flex-col`}>
-        <div className="mt-[50px] grid  grid-cols-2  min-h-[70vh] gap-5 mb-5">
+        <div className="mt-[50px] grid  grid-cols-3  min-h-[70vh] gap-5 mb-5">
           {projects.map((project, index) => (
             <ProjectCard
               key={project.id}
