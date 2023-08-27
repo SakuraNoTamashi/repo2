@@ -37,16 +37,7 @@ const SoftSkills = () => {
             <motion.p
                 variants={fadeIn('', '', 0.1, 1)}
                 className="mt-4 self-end text-taupe text-[18px] max-w-5xl leading-[30px]  text-justify">
-                I bring a unique blend of skills in hardware
-                and software development, as well as a passion for Artifficial Inteligence implementation.
-                With a focus on collaboration and teamwork, I have successfully
-                delivered innovative solutions in computer vision, robotics, and
-                network protocols. Additionally, my experience in Flutter, Laravel,
-                and React for multiplatform applications demonstrates my ability
-                to create user-friendly and efficient software while working in a
-                team environment. I possess strong leadership, problem solving
-                and adaptability skills, enabling me to effectively communicate
-                and work with people from diverse backgrounds.
+                With a distinctive blend of hardware and software development skills, coupled with a fervent enthusiasm for implementing Artificial Intelligence, I present a compelling profile. My professional journey underscores a strong commitment to collaboration and teamwork, yielding innovative solutions in domains like computer vision, robotics, and network protocols. Demonstrating versatility, I have proficiently utilized Flutter, Laravel, and React for crafting cross-platform applications that prioritize user-friendliness and efficiency. Beyond technical prowess, my repertoire encompasses a rich collection of soft skills, including adept communication, analytical problem-solving, effective leadership, critical thinking, and a collaborative spirit. My inherent adaptability has been instrumental in traversing diverse contexts, while my dedication to continuous learning fuels both personal growth and dynamic interactions within interdisciplinary teams.
             </motion.p>
 
 
