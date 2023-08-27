@@ -1,4 +1,5 @@
 
+import { Preload } from '@react-three/drei';
 import {
     About,
     Contact,
@@ -19,7 +20,7 @@ const Landing = () => {
             <div className="relative z-0">
                 <div>
                     <Navbar />
-                    <Hero />
+                    <Hero isProfessionalView={false} />
                 </div>
 
                 <div className="bg-about bg-cover bg-center bg-no-repeat">
@@ -32,9 +33,7 @@ const Landing = () => {
                     <About />
                 </div> */}
 
-                <div className="relative z-0">
-                    <Contact />
-                </div>
+
 
 
 

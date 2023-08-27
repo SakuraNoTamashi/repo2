@@ -4,6 +4,7 @@ import ServicesPage from "./pages/services";
 
 import ProjectsPage from "./pages/projects";
 import ProjectPage from "./pages/project";
+import ContactPage from "./pages/contact";
 
 const App = () => {
   return (
@@ -12,6 +13,7 @@ const App = () => {
       <Route path='/services' element={<ServicesPage />} />
       <Route path='/projects' exact element={<ProjectsPage />} />
       <Route path='/project' element={<ProjectPage />} />
+      <Route path="/contact" element={<ContactPage />} />
     </Routes>
   );
 };

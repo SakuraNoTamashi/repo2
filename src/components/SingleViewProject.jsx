@@ -59,7 +59,7 @@ function SingleViewProject() {
                     My role
                 </p>
                 <h2 className={`${styles.sectionHeadText} `}>
-                    What did I help accomplishing?
+                    What did I help accomplish?
                 </h2>
 
                 <div className="-mt-[6 rem] ">

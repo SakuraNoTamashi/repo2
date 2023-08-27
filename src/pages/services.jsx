@@ -11,17 +11,24 @@ import {
     Services
 
 } from '../components';
+import ScreenPreLoader from '../components/preloaders/ScreenPreLoader';
+import MatrixRain from '../components/preloaders/matrixLoad';
 
 
 const ServicesPage = () => {
     return (
         <>
-            <div className="relative z-0">
-                <div>
-                    <Navbar />
-                    <div className="bg-about bg-cover bg-center bg-no-repeat">
-                        <Services />
-                    </div>
+
+            <div>
+                <Navbar />
+
+            </div>
+
+
+
+            <div className='z-0'>
+                <div className="bg-about bg-cover bg-center bg-no-repeat">
+                    <Services />
                 </div>
 
 
@@ -39,15 +46,9 @@ const ServicesPage = () => {
                     </div>
                 </div>
 
-
-
-
-
-
-
-
-
             </div>
+
+
         </>
 
 
