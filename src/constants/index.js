@@ -85,7 +85,7 @@ export const navLinks = [
   },
    {
     id: 'services',
-    title: 'Professional Overview',
+    title: 'Services',
   },
 
   {

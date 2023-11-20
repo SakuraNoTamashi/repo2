@@ -10,16 +10,16 @@ import { coverPic, shaq } from '../assets';
 
 const About = () => {
   return (
-    <div className="-mt-[6rem] px-6 grid grid-cols-3 gap-20">
+    <div className="sm:-mt-[6rem] -mt-[12rem] px-6 grid grid-cols-3 gap-20">
       <motion.div>
-        <div className='bg-night w-full h-full flex items-center rounded-xl justify-center'>
+        <div className='bg-night w-full h-full sm:flex hidden items-center rounded-xl justify-center '>
           <img src={coverPic} className='w-auto' style={{ height: '90%' }} alt='Cover' />
         </div>
       </motion.div>
 
 
 
-      <div className='col-span-2'>
+      <div className='sm:col-span-2 col-span-3'>
         <motion.div variants={textVariant()}>
           <p className={styles.sectionSubText}>Introduction</p>
           <h2 className={styles.sectionHeadText}>Overview.</h2>
@@ -27,7 +27,7 @@ const About = () => {
 
         <motion.p
           variants={fadeIn('', '', 0.1, 1)}
-          className="mt-4 text-taupe text-[18px] max-w-5xl leading-[30px] text-justify">
+          className="mt-4  text-taupe text-[18px] max-w-5xl leading-[30px] text-justify">
           I bring a unique blend of skills in hardware
           and software development, as well as a passion for Artifficial Inteligence implementation.
           With a focus on collaboration and teamwork, I have successfully

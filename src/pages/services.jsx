@@ -27,9 +27,9 @@ const ServicesPage = () => {
 
 
             <div className='z-0'>
-                <div className="bg-about bg-cover bg-center bg-no-repeat">
+               <div className="bg-about bg-cover bg-center bg-no-repeat">
                     <Services />
-                </div>
+                </div> 
 
 
                 <div className="bg-tech bg-cover bg-center bg-no-repeat pb-10">

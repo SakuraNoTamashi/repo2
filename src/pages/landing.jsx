@@ -12,6 +12,14 @@ import {
     SoftSkills
 
 } from '../components';
+import { softskills } from '../constants';
+
+import { motion } from 'framer-motion';
+import React, { useEffect, useState } from 'react';
+
+import { styles } from '../styles';
+
+import { fadeIn, textVariant } from '../utils/motion';
 
 
 const Landing = () => {
@@ -28,10 +36,10 @@ const Landing = () => {
                 </div>
                 <div className="relative z-0 ">
                     <SoftSkills />
+                   
+
                 </div>
-                {/* <div className="bg-about bg-cover bg-center bg-no-repeat">
-                    <About />
-                </div> */}
+
 
 
 

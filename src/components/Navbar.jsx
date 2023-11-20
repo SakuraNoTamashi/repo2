@@ -7,6 +7,15 @@ import { close, menu, logo, logotext } from '../assets';
 const Navbar = () => {
   const [active, setActive] = useState('');
   const [toggle, setToggle] = useState(false);
+  let currentUrl = '/';
+  useEffect(() => {
+    // Get the current URL
+    currentUrl = window.location.href;
+    currentUrl = currentUrl.split('/')[3];
+    currentUrl = currentUrl.charAt(0).toUpperCase() + currentUrl.slice(1)
+    setActive(currentUrl == '' ? 'About me' : currentUrl);
+    console.log('Current URL:', currentUrl);
+  }, []);
 
   return (
     <nav
@@ -48,11 +57,11 @@ const Navbar = () => {
         </ul>
 
         {/* mobile */}
-        <div className="sm:hidden flex flex-1 w-screen justify-end items-center">
+        <div className="sm:hidden flex flex-1 w-screen justify-end items-center ">
           {toggle ? (
             <div
               className={`p-6 bg-flashWhite opacity-[0.98] absolute
-                top-0 left-0 w-screen h-[100vh] z-10 menu ${toggle ? 'menu-open' : 'menu-close'
+                top-0 left-0 w-screen h-[100vh] z-99 menu ${toggle ? 'menu-open' : 'menu-close'
                 }`}>
               <div className="flex justify-end">
                 <img
@@ -64,19 +73,19 @@ const Navbar = () => {
               </div>
               <ul
                 className="list-none flex flex-col -gap-[1rem]
-                items-start justify-end mt-[10rem] -ml-[35px]">
+                items-start justify-end mt-[1rem] mx-0">
                 {navLinks.map((nav) => (
                   <li
                     id={nav.id}
                     key={nav.id}
                     className={`${active === nav.title ? 'text-french' : 'text-eerieBlack'
-                      } text-[88px] font-bold font-arenq
+                      } text-[50px] font-bold font-arenq
                       uppercase tracking-[1px] cursor-pointer`}
                     onClick={() => {
                       setToggle(!toggle);
                       setActive(nav.title);
                     }}>
-                    <a href={`#${nav.id}`}>{nav.title}</a>
+                    <a href={`${nav.id}`}>{nav.title}</a>
                   </li>
                 ))}
               </ul>

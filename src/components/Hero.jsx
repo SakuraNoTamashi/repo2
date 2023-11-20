@@ -3,6 +3,8 @@ import { Link } from 'react-router-dom';
 import { styles } from '../styles';
 import { navLinks } from '../constants';
 import { shaq, bwmap, worldmap, codingBC } from '../assets';
+import { slideIn } from '../utils/motion';
+import { SectionWrapper } from '../hoc';
 
 const Hero = () => {
   return (
@@ -16,7 +18,7 @@ const Hero = () => {
       </div>
       <div className="absolute top-0 left-0 z-0 h-[100vh] w-screen">
         <img
-          src={worldmap}
+          src={codingBC}
           alt="world map"
           className="w-full h-full sm:hidden block object-cover"
         />
@@ -25,21 +27,20 @@ const Hero = () => {
         className="relative flex sm:flex-row flex-col w-full h-screen mx-auto 
         sm:bg-hero bg-hero-mobile overflow-hidden">
         <div
-          className={`absolute inset-0 sm:top-[250px] top-[150px] 
+          className={`absolute inset-0 sm:top-[250px] top-[120px] 
           lg:top-[150px] xl:top-[250px] ${styles.paddingX} 
-          max-w-9xl mx-auto flex flex-row items-start
+          sm:max-w-9xl max-w-full sm:mx-auto flex flex-row items-start
           justify-between gap-3`}>
-          <div className="flex flex-col justify-center items-center mt-5 ml-3">
-            <div className="w-5 h-5 rounded-full bg-[#0a0a0a] sm:hidden" />
-            <div className="w-1 sm:h-80 h-40 bw-gradient sm:hidden" />
-          </div>
 
-          <div className=' w-full sm:w-2/3  '>
+
+          <motion.div variants={slideIn('left', 'tween', 0.2, 1)} className=' w-full sm:w-2/3  ' >
+
             <h1
               className={`${styles.heroHeadText} text-eerieBlack font-poppins uppercase `}>
               Hi, I'm{' '}<br />
               <span
-                className="sm:text-battleGray sm:text-[90px] 
+                className="sm:text-battleGray md:text-[90px]
+                
                 text-eerieBlack text-[50px] font-mova
                 font-extrabold uppercase">
                 Juan Arango
@@ -49,7 +50,7 @@ const Hero = () => {
               Mechatronic Engineer & <br className="sm:block hidden" />
               Full-stack developer
             </p>
-          </div>
+          </motion.div>
           <div
             className="w-screen flex flex-col items-start 
             justify-center sm:-ml-[3rem] xxs:mt-4"></div>
@@ -63,7 +64,7 @@ const Hero = () => {
           <a href="#about">
             <div
               className="w-[35px] h-[64px] rounded-3xl border-4 
-            border-french border-dim flex
+            border-french  flex
             justify-center items-start p-2">
               <motion.div
                 animate={{
@@ -83,9 +84,9 @@ const Hero = () => {
         {/* Your image comes here. Feel free to remove image if you don't plan to have one.*/}
         <div>
           <img
-            className="absolute bottom-0 ml-[50vw] 
-            lg:ml-[75vw] md:ml-[60vw] xmd:ml-[60vw] 2xl:ml-[83vw]
-            sm:h-[90vh] md:h-[70vh] xl:h-[80vh]"
+            className="absolute bottom-0 ml-[50vw]  h-[50vh]
+            lg:ml-[75vw] xmd:ml-[60vw] 2xl:ml-[80vw]
+            sm:h-[80vh]  md:h-[70vh] xl:h-[80vh]"
             src={shaq}
             alt="juan"
           />

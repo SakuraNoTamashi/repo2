@@ -20,7 +20,7 @@ const ContactPage = () => {
                 <div>
                     <Navbar />
                 </div>
-                <div className="relative mt-8">
+                <div className="relative mt-[17vh]">
                     <Contact />
                 </div>
 
