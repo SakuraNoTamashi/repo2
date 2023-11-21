@@ -24,8 +24,8 @@ const ServicesPage = () => {
 
             </div>
             <div className='bg-night w-screen h-[60vh] flex flex-col items-center justify-center rounded-xl gap-[10px] mt-[11vh]'>
-                <h2 className={`${styles.sectionHeadTextLight} text-center`}>
-                    "The capacity to learn is a gift, the ability to learn is a skill, the willingness to learn is a choice."
+                <h2 className={`${styles.sectionHeadTextLight} text-center text-taupe`}>
+                    "The capacity to learn is a gift, the ability to learn is a skill, the willingness to learn is a <strong className=' text-white underline'>choice</strong>."
                 </h2>
                 <p className={`${styles.sectionSubTextLight} `}>- Brian Herbert</p>
                 <div
