@@ -78,6 +78,7 @@ import microverse from './company/microverse.png';
 import atg from './company/advance.png';
 import vclair from './company/vert-clair.png';
 import workana from './company/workana.png';
+import bdo from './company/BDO_logo.jpeg';
 
 
 import engHv from './resumes/Juan Arango CV ENG.pdf';
@@ -90,6 +91,7 @@ import factoryTv from './projects/factorytv.png';
 import projectTrading from './projects/projectTrading.png';
 import rubi5 from './projects/rubi5.png';
 import colombianFixers from './projects/ColombianFixers.png';
+
 
 import leaderboard from './projects/leaderboard.png';
 import math from './projects/math-magicians.png';
@@ -113,10 +115,29 @@ import negotiation from './softSkills/apreton-de-manos.png';
 import presentation from './softSkills/presentacion.png';
 
 
+let imageContext = import.meta.globEager('./projects/deliveryGoo/*.+(png|jpg|jpeg|gif|svg)');
+const deliveryGooGallery = Object.keys(imageContext).map((key) => imageContext[key].default);
 
+ imageContext = import.meta.globEager('./projects/projectTrading/*.+(png|jpg|jpeg|gif|svg)');
+const projectTradingGallery = Object.keys(imageContext).map((key) => imageContext[key].default);
+
+ imageContext = import.meta.globEager('./projects/helpingHand/*.+(png|jpg|jpeg|gif|svg)');
+const helpingHandGallery = Object.keys(imageContext).map((key) => imageContext[key].default);
+
+ imageContext = import.meta.globEager('./projects/rubi5/*.+(png|jpg|jpeg|gif|svg)');
+const Rubi5Gallery = Object.keys(imageContext).map((key) => imageContext[key].default);
+ imageContext = import.meta.globEager('./projects/factorymobile/*.+(png|jpg|jpeg|gif|svg)');
+const factoryMobileGallery = Object.keys(imageContext).map((key) => imageContext[key].default);
 
 
 export {
+  deliveryGooGallery,
+  projectTradingGallery,
+  helpingHandGallery,
+  Rubi5Gallery,
+  factoryMobileGallery,
+bdo,
+
   wpress,
   strapi,
   firebase,

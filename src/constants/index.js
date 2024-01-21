@@ -75,6 +75,12 @@ import {
   firebase,
   ec2,
   plesk,
+  deliveryGooGallery,
+  Rubi5Gallery,
+  projectTradingGallery,
+  factoryMobileGallery,
+  helpingHandGallery,
+  bdo,
 } from '../assets';
 
 
@@ -317,6 +323,7 @@ const experiences = [
     icon: workana,
     iconBg: '#333333',
     date: 'Feb 2023 - Apr 2023',
+   
   },
   {
     title: 'Flutter & Node.js developer',
@@ -337,14 +344,37 @@ const experiences = [
     company_name: 'mipymes as freelance',
     icon: workana,
     iconBg: '#333333',
-    date: 'Aug 2023 - present',
+    date: 'Aug 2023 - Dec 2023',
+  },
+    {
+    title: 'Flutter & react developer',
+    company_name: 'DayOff as freelance',
+    icon: workana,
+    iconBg: '#333333',
+    date: 'Aug 2023 - Dec 2023',
+  },
+        {
+    title: 'Microsoft Power platform Developer',
+    company_name: 'BDO as Junior I&T Dev',
+    icon: bdo,
+    iconBg: '#333333',
+    date: 'Aug 2023 - Dec 2023',
   },
 ];
+
+
+
+
+
+
+
+
 const projects = [
   {
     id: 'project-1',
     name: 'Helping Hand mipymes',
     description: 'A CMS meant to help guide starting entrepreneurs with the consolidation of their company',
+    images:helpingHandGallery,
     tags: [
       { tag: laravel, tagName: 'Laravel' },
       { tag: aws, tagName: 'AWS' },
@@ -369,6 +399,7 @@ Central to its design are a host of impactful features that augment the user exp
     id: 'project-2',
     name: 'Factory TV',
     description: 'An application meant to enjoy the best movies and series out there! Not enough? Watch the collection of IPTV channels or sports results live!',
+    images:factoryMobileGallery,
     tags: [
       { tag: flutter, tagName: 'Flutter' },
       { tag: strapi, tagName: 'Strapi' },
@@ -389,6 +420,7 @@ In addition to its core offerings, the application also delivers real-time sport
   {
     id: 'project-3',
     name: 'Project Trading',
+    images:projectTradingGallery,
     description: 'An order tracing app meant to organize and track the development of delivering across different boundaries.',
     tags: [
       { tag: flutter, tagName: 'Flutter' },
@@ -439,11 +471,12 @@ In essence, my role was one of comprehensive improvement and enhancement. From a
 Laravel also operates as a robust API gateway, seamlessly connecting with the Flutter application. Flutter, in turn, is instrumental in transforming this synergy into three distinct applications. These applications cater to different user roles - delivery personnel, customers, and restaurants. Notably, Flutter transcends platforms, successfully deploying across web, iOS, and Android devices, ensuring a consistent and intuitive user experience across diverse environments.
 
 A pivotal highlight lies in the application's comprehensive geotracking feature, enabling real-time location tracking. This feature dovetails seamlessly into the intricate order process, harmonizing the interactions between delivery personnel, customers, and restaurants. In essence, this Laravel x Flutter fusion forms a sophisticated ecosystem, optimizing delivery operations and communication while enhancing user experiences across multiple touchpoints.`,
-    
+     images:deliveryGooGallery
   },
   {
     id: 'project-5',
     name: 'rubi5',
+    images:Rubi5Gallery,
     description: 'WordPress development of a plugin for organizing and showing the applications cart & product settings',
     tags: [
       { tag: wpress, tagName: 'WordPress' },
@@ -470,6 +503,7 @@ Furthermore, the plugin extended its impact to the billing phase. By facilitatin
     id: 'project-6',
     name: 'Colombian Fixers',
     description: 'Optimization of a website working with an old version of jQuery',
+    images:[colombianFixers],
     tags: [
       { tag: reactjs, tagName: 'React.js' },
       { tag: aws, tagName: 'AWS' },
