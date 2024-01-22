@@ -91,6 +91,7 @@ import factoryTv from './projects/factorytv.png';
 import projectTrading from './projects/projectTrading.png';
 import rubi5 from './projects/rubi5.png';
 import colombianFixers from './projects/ColombianFixers.png';
+import dayOff from './projects/dayOff/dayOff.png';
 
 
 import leaderboard from './projects/leaderboard.png';
@@ -129,6 +130,10 @@ const Rubi5Gallery = Object.keys(imageContext).map((key) => imageContext[key].de
  imageContext = import.meta.globEager('./projects/factorymobile/*.+(png|jpg|jpeg|gif|svg)');
 const factoryMobileGallery = Object.keys(imageContext).map((key) => imageContext[key].default);
 
+ imageContext = import.meta.globEager('./projects/dayOff/*.+(png|jpg|jpeg|gif|svg)');
+const dayOffGallery = Object.keys(imageContext).map((key) => imageContext[key].default);
+
+
 
 export {
   deliveryGooGallery,
@@ -136,7 +141,9 @@ export {
   helpingHandGallery,
   Rubi5Gallery,
   factoryMobileGallery,
-bdo,
+  bdo,
+  dayOff,
+dayOffGallery,
 
   wpress,
   strapi,

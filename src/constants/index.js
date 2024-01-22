@@ -81,6 +81,8 @@ import {
   factoryMobileGallery,
   helpingHandGallery,
   bdo,
+  dayOff,
+  dayOffGallery,
 } from '../assets';
 
 
@@ -417,6 +419,36 @@ In a leadership capacity, I spearheaded the creation of a user-friendly applicat
 
 In addition to its core offerings, the application also delivers real-time sports results and streaming channels that showcase various events. Among its standout features is the unique capability to simultaneously display multiple channels within a single screen. This innovative approach not only elevates the user experience but also emphasizes the application's commitment to offering versatility and convenience to its users. The application harmoniously merges modern aesthetics, dynamic functionality, and efficient management to create a holistic and enjoyable entertainment experience.`,
   },
+   {
+    id: 'project-7',
+    name: 'DayOff',
+    description: 'Empower your legal counsel with our AI-driven advisory assistant. Tailored for job events or deals, the specifically spanish trained trained AI provides comprehensive support for legal issues, ensuring efficient and informed decision-making.',
+    images:dayOffGallery,
+    tags: [
+      { tag: flutter, tagName: 'Flutter' },
+      { tag: aws, tagName: 'AWS' },
+      { tag: ec2, tagName: 'EC2' },
+      { tag: python, tagName: 'python' },
+    ],
+    image: dayOff,
+    repo: '',
+    demo: 'https://inspiring-medovik-37d3b3.netlify.app/',
+    myRole: `In the Day Off project, I served as both Scrum Master and lead developer, with a special emphasis on the AI aspect. My mission was clear: make the app not just technically robust but also human-friendly.
+
+Collaborating closely with the team, I ensured that our AI functionality went beyond the ordinary. It wasn't just about providing information; it was about creating an AI that truly understood and assisted users with their job law-related issues. From training the AI on legal Spanish documents to refining responses, my goal was to make it an intuitive and valuable virtual assistant.
+
+Functionality was crucial, but I didn't stop there. I took an active role in enhancing the user experience, ensuring that interacting with our AI felt not just informative but also genuinely helpful. This fusion of technical expertise and user-centric design was achieved through seamless teamwork. We communicated openly, shared insights, and shaped Day Off into an app where the AI isn't just a feature—it's a reliable, understanding companion for users navigating the complexities of job law. 👩‍💻🤖✨
+
+`,
+    longDescription:`
+Created as a Flutter app under my leadership, Day Off is more than just a scheduler – it's your work companion. I steered the development to seamlessly blend practicality with innovation. Now, not only can you effortlessly manage work shifts and contract details, but our AI, trained on legal Spanish docs, adds a layer of expertise.
+
+Day Off goes beyond the basics. It simplifies extra hours' compensation calculations, ensuring transparent and fair wages. What's the magic behind it? A Flask Python API powers the AI responses, making them sharp and reliable.
+
+Imagine having a friend to navigate work complexities – that's Day Off for you. From contract details to AI-driven legal insights, it's designed to make your work life simpler and more efficient. It's innovation meets functionality, enhancing your work journey in every aspect. 👩‍💻✨
+
+`,
+  },
   {
     id: 'project-3',
     name: 'Project Trading',
@@ -536,6 +568,7 @@ Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac tu
 
 `,
   },
+ 
 ];
 
 export { services, technologies, experiences, projects, softskills };
