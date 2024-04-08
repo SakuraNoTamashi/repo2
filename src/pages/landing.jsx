@@ -25,7 +25,7 @@ import { fadeIn, textVariant } from '../utils/motion';
 const Landing = () => {
     return (
         <>
-            <div className='z-[9]  h-[700px] w-[500px] right-[0px] bottom-[0px]  fixed'>
+            <div className='z-[9]  h-[500px] w-[500px] right-[0px] bottom-[0px]  fixed'>
                 {/* Otro contenido de tu componente si lo hay */}
                 <iframe
                     title="Tu Título"
