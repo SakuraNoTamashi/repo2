@@ -25,6 +25,15 @@ import { fadeIn, textVariant } from '../utils/motion';
 const Landing = () => {
     return (
         <>
+            <div className='z-[9]  h-[700px] w-[500px] right-[0px] bottom-[0px]  fixed'>
+                {/* Otro contenido de tu componente si lo hay */}
+                <iframe
+                    title="Tu Título"
+                    src="https://copilotstudio.microsoft.com/environments/Default-c254eece-964c-40d3-81bd-d74656c087fd/bots/crf8f_copilotoPruebasBeTic/webchat?__version__=2"
+                    frameBorder="0"
+                    style={{ width: '100%', height: '100%' }}
+                ></iframe>
+            </div>
             <div className="relative z-0">
                 <div>
                     <Navbar />
@@ -36,7 +45,7 @@ const Landing = () => {
                 </div>
                 <div className="relative z-0 ">
                     <SoftSkills />
-                   
+
 
                 </div>
 
