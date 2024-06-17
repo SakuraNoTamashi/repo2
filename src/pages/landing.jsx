@@ -25,15 +25,15 @@ import { fadeIn, textVariant } from '../utils/motion';
 const Landing = () => {
     return (
         <>
-            <div className='z-[9]  h-[500px] w-[500px] right-[0px] bottom-[0px]  fixed'>
+            <div className='z-[9]  h-[600px] w-[600px] right-[0px] bottom-[0px]  fixed'>
                 {/* Otro contenido de tu componente si lo hay */}
-                 {/* <iframe
+                 <iframe
                     title="Tu Título"
-                    src="https://copilotstudio.microsoft.com/environments/Default-c254eece-964c-40d3-81bd-d74656c087fd/bots/crf8f_copilotoPruebasBeTic/webchat?__version__=2"
+                    src="https://web.powerva.microsoft.com/environments/0654d8a3-5812-e86c-8102-16bf26fbb319/bots/cre7a_prueba/webchat?_version_=2"
                     frameBorder="0"
                  
                     style={{ width: '100%', height: '100%' }}
-                ></iframe>  */}
+                ></iframe> 
             </div>
             <div className="relative z-0">
                 <div>
