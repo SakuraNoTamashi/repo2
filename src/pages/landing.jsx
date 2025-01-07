@@ -25,8 +25,8 @@ import { fadeIn, textVariant } from '../utils/motion';
 const Landing = () => {
     return (
         <>
-            <div className='z-[9]  h-[600px] w-[600px] right-[0px] bottom-[0px]  fixed'>
-                {/* Otro contenido de tu componente si lo hay */}
+            {/* <div className='z-[9]  h-[600px] w-[600px] right-[0px] bottom-[0px]  fixed'>
+    
                  <iframe
                     title="Tu Título"
                     src="https://web.powerva.microsoft.com/environments/0654d8a3-5812-e86c-8102-16bf26fbb319/bots/cre7a_prueba/webchat?_version_=2"
@@ -34,7 +34,7 @@ const Landing = () => {
                  
                     style={{ width: '100%', height: '100%' }}
                 ></iframe> 
-            </div>
+            </div> */}
             <div className="relative z-0">
                 <div>
                     <Navbar />
