@@ -5,13 +5,12 @@ https://github.com/shaqdeff/Portfolio-Template/assets/92020713/eed76a82-e59d-440
 ![portfolio-phone](https://github.com/shaqdeff/Portfolio-Template/assets/92020713/e41ed31c-50e5-40d3-a74f-9c0eb053fe7f)
 ![portfolio-phone-3](https://github.com/shaqdeff/Portfolio-Template/assets/92020713/e8c23aa7-ac27-48fc-bf66-50ab00e3a64f)
 
-I created this portfolio to use as my own but ended up doing something else entirely. However, instead of keeping it buried, I decided to put it up here on GitHub as an open-source resource to help individuals to learn, adapt, and create their own portfolios. Feel free to customize and modify the theme and components to suit your personal style and branding preferences.
 
 ## License and Attribution
 
-The code in this repository is released under the [MIT](https://github.com/shaqdeff/Portfolio-Template/blob/90213d4887074d1d29434f706afad3d12fa33f5f/MIT.md) License, which grants you the freedom to use, modify, and distribute the template as your own. However, if you choose to use the site's design largely unmodified, kindly credit me as the original designer of the site.
+The code in this repository is released under the [MIT](https://github.com/shaqdeff/Portfolio-Template/blob/90213d4887074d1d29434f706afad3d12fa33f5f/MIT.md) License
 
-All projects and experiences included in this portfolio are the result of my own efforts and creativity. Please refrain from presenting them as your own.
+All projects and experiences included in this portfolio are the result of my own efforts and creativity.
 
 ## Built With
 
@@ -19,10 +18,6 @@ All projects and experiences included in this portfolio are the result of my own
 - Three.js
 - Framer Motion
 - TailwindCSS
-
-## Live Demo
-
-- Click [here](https://shaq-portfolio.netlify.app/) to view the live demo.
 
 ## Getting Started
 
@@ -82,19 +77,10 @@ npm run preview
 ```
 
 ## Authors
-
+👤 **Juan Arango**
 👤 **Shaquille Ndunda**
 
 - GitHub: [@shaqdeff](https://github.com/shaqdeff)
 - Twitter: [@shaquillendunda](https://twitter.com/shaquillendunda)
 - LinkedIn: [Shaquille Ndunda](https://www.linkedin.com/in/shaquille-ndunda-b13a95107/)
 
-## Feedback and Contributions
-
-If you have any feedback, suggestions, or would like to contribute to this project, your involvement is highly valued. Feel free to open an [issue](../../issues/) or submit a pull request with your ideas and enhancements. Remember, this template is a starting point, and the true magic lies in making it your own. Enjoy the journey of creating a stunning portfolio that represents your unique talents and accomplishments!
-
-Happy coding and showcasing!
-
-## Show your support
-
-Give a ⭐️ if you like this project!
